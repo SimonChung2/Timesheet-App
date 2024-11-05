@@ -1,0 +1,82 @@
+:root {
+  --primary-color: #000000;
+  --hover-color: #535bf2;
+  --background-color: #f0f0f0;
+  --text-color: #333;
+  --card-bg-color: #fff;
+  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --border-radius: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--primary-color);
+}
+a:hover {
+  color: var(--hover-color);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f7ed33;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-right: 1rem; /* Add margin to space out the buttons */
+}
+
+button:last-child {
+  margin-right: 0; /* Ensures the last button has no extra margin */
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:focus {
+  outline: none;
+}
+
+.form-group {
+  display: flex;               /* Use flexbox for alignment */
+  align-items: center;        /* Vertically center items */
+  margin-bottom: 1rem;        /* Space between fields */
+}
+
+label {       
+  width: 150px;               /* Fixed width for labels */
+  text-align: center;
+}
+
+input {
+  padding: 0.5em;             /* Add padding for input fields */
+  border: 1px solid #ccc;     /* Light border for input fields */
+  border-radius: 4px;         /* Rounded corners for input fields */
+  flex-grow: 1;               /* Allow input to grow to fill space */
+}
+
+h2 {
+  text-align: center;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 4px;
+
+
+}
